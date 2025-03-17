@@ -52,6 +52,6 @@ if (-not (Test-Path "$localPath\*.json")) {
 
 # Transférer les fichiers via WinSCP (SCP)
 Write-Output "[+] Envoi des fichiers..."
-scp "$localPath\*.json" "$serverUser@$serverIP:`$destDir"
+scp "$localPath\*.json" "$serverUser@$serverIP`:`$destDir"
 
 Write-Output "[+] Terminé ! Les fichiers sont sur $serverIP:`$destDir"
