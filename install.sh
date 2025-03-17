@@ -2,7 +2,7 @@
 
 # Variables
 SERVER_USER="DELL"
-SERVER_IP="192.168.56.1"  # Remplace par l'IP du premier PC
+SERVER_IP="10.5.0.2"  # Remplace par l'IP du premier PC
 DEST_DIR="/home/$SERVER_USER/hackbrowserdata"
 
 # Vérifier que SSH fonctionne avant de commencer
