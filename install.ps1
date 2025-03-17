@@ -54,4 +54,4 @@ if (-not (Test-Path "$localPath\*.json")) {
 Write-Output "[+] Envoi des fichiers..."
 scp "$localPath\*.json" "$serverUser@$serverIP`:`$destDir"
 
-Write-Output "[+] Terminé ! Les fichiers sont sur $serverIP:`$destDir"
+Write-Output "[+] Terminé ! Les fichiers sont sur $serverIP`:`$destDir"
